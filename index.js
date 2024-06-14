@@ -1,4 +1,3 @@
-
 const { registrar, leer } = require('./operaciones.js');
 
 const [operacion, nombre, edad, animal, color, enfermedad] = process.argv.slice(2);
@@ -9,5 +8,5 @@ if (operacion === 'registrar') {
 } else if (operacion === 'leer') {
     leer();
 } else {
-    console.log('Operación no reconocida. Usa "registrar" para añadir una nueva cita o "leer" para leer las citas.');
+    console.log('Error. Usa "registrar" para añadir una nueva cita o "leer" para leer las citas.');
 }
